@@ -19,7 +19,9 @@ class FilamentMonacoEditorServiceProvider extends PackageServiceProvider
 
     public function configurePackage(Package $package): void
     {
-        $package->name(static::$name);
+        $package->name(static::$name)
+            ->hasAssets()
+            ->hasViews();
     }
 
     public function packageRegistered(): void
