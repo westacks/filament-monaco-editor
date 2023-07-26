@@ -47,13 +47,13 @@ class FilamentMonacoEditorServiceProvider extends PackageServiceProvider
     protected function getAssets(): array
     {
         return [
-            AlpineComponent::make('filament-monaco-editor', __DIR__ . '/../resources/dist/components/filament-monaco-editor.js'),
-            Css::make('filament-monaco-editor-css', __DIR__ . '/../resources/dist/components/filament-monaco-editor.css'),
-            Js::make('editor-worker', __DIR__ . '/../resources/dist/editor.worker.js'),
-            Js::make('html-worker', __DIR__ . '/../resources/dist/html.worker.js'),
-            Js::make('ts-worker', __DIR__ . '/../resources/dist/ts.worker.js'),
-            Js::make('css-worker', __DIR__ . '/../resources/dist/css.worker.js'),
-            Js::make('json-worker', __DIR__ . '/../resources/dist/json.worker.js'),
+            AlpineComponent::make('filament-monaco-editor', __DIR__ . '/../resources/dist/components/filament-monaco-editor.js')->loadedOnRequest(),
+            Css::make('filament-monaco-editor-css', __DIR__ . '/../resources/dist/components/filament-monaco-editor.css')->loadedOnRequest(),
+            Js::make('editor-worker', __DIR__ . '/../resources/dist/editor.worker.js')->loadedOnRequest(),
+            Js::make('html-worker', __DIR__ . '/../resources/dist/html.worker.js')->loadedOnRequest(),
+            Js::make('ts-worker', __DIR__ . '/../resources/dist/ts.worker.js')->loadedOnRequest(),
+            Js::make('css-worker', __DIR__ . '/../resources/dist/css.worker.js')->loadedOnRequest(),
+            Js::make('json-worker', __DIR__ . '/../resources/dist/json.worker.js')->loadedOnRequest(),
         ];
     }
 }
