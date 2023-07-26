@@ -12,6 +12,16 @@ class MonacoEditor extends Field
 
     protected string $view = 'filament-monaco-editor::monaco-editor';
 
+    public function getLanguage(): string
+    {
+        return $this->language;
+    }
+
+    public function getTheme(): string
+    {
+        return $this->theme;
+    }
+
     public function language(string $language): static
     {
         $this->language = $language;

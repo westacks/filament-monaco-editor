@@ -1,6 +1,6 @@
 import * as monaco from 'monaco-editor/esm/vs/editor/editor.api';
 
-global.MonacoEnvironment = {
+window.MonacoEnvironment = {
     globalAPI: true,
     getWorkerUrl: (moduleId, label) => {
         if (label === 'html' || label === 'handlebars') {
@@ -22,7 +22,7 @@ global.MonacoEnvironment = {
         return '/editor.worker.js';
     },
     getWorker: (moduleId, label) => {
-        return new Worker(global.MonacoEnvironment.getWorkerUrl(moduleId, label));
+        return new Worker(window.MonacoEnvironment.getWorkerUrl(moduleId, label));
     },
 };
 

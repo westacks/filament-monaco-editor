@@ -8,7 +8,7 @@
         ax-load
         ax-load-src="{{ \Filament\Support\Facades\FilamentAsset::getAlpineComponentSrc('filament-monaco-editor', 'connorhowell/filament-monaco-editor') }}"
         x-data="filamentMonacoEditor({
-            state: $wire.{{ $applyStateBindingModifiers("entangle('{$statePath}')") }},
+            state: $wire.entangle('{{ $getStatePath() }}'),
             theme: '{{ $getTheme() }}',
             language: '{{ $getLanguage() }}'
         })"
