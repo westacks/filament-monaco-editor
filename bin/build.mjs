@@ -54,6 +54,7 @@ compile({
         "json.worker": "./node_modules/monaco-editor/esm/vs/language/json/json.worker.js",
     },
     bundle: true,
+    format: 'iife',
     outdir: "./resources/dist",
     loader: {
         ".ttf": "file",

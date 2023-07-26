@@ -4,22 +4,22 @@ window.MonacoEnvironment = {
     globalAPI: true,
     getWorkerUrl: (moduleId, label) => {
         if (label === 'html' || label === 'handlebars') {
-            return '/html.worker.js';
+            return '/js/connorhowell/filament-monaco-editor/html.worker.js';
         }
 
         if (label === 'javascript' || label === 'typescript') {
-            return '/ts.worker.js';
+            return '/js/connorhowell/filament-monaco-editor/ts.worker.js';
         }
 
         if (label === 'scss' || label === 'less' || label === 'css') {
-            return '/css.worker.js';
+            return '/js/connorhowell/filament-monaco-editor/css.worker.js';
         }
 
         if (label === 'json') {
-            return '/json.worker.js';
+            return '/js/connorhowell/filament-monaco-editor/json.worker.js';
         }
 
-        return '/editor.worker.js';
+        return '/js/connorhowell/filament-monaco-editor/editor.worker.js';
     },
     getWorker: (moduleId, label) => {
         return new Worker(window.MonacoEnvironment.getWorkerUrl(moduleId, label));
@@ -31,7 +31,7 @@ export default function filamentMonacoEditor({ state, theme, language }) {
         state,
         monaco: null,
         init: function () {
-            this.monaco = monaco.editor.create(this.$refs.codeBlock, {
+            this.monaco = monaco.editor.create(this.$refs.element, {
                 value: state,
                 theme: theme,
                 automaticLayout: true,
