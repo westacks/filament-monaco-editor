@@ -10,6 +10,8 @@ class MonacoEditor extends Field
 
     protected string $theme = 'vs';
 
+    protected string $height = '250px';
+
     protected string $view = 'filament-monaco-editor::monaco-editor';
 
     public function getLanguage(): string
@@ -22,6 +24,11 @@ class MonacoEditor extends Field
         return $this->theme;
     }
 
+    public function getHeight(): string
+    {
+        return $this->height;
+    }
+
     public function language(string $language): static
     {
         $this->language = $language;
@@ -32,6 +39,13 @@ class MonacoEditor extends Field
     public function theme(string $theme): static
     {
         $this->theme = $theme;
+
+        return $this;
+    }
+
+    public function height(string $height): static
+    {
+        $this->height = $height;
 
         return $this;
     }

@@ -1,4 +1,4 @@
-import * as monaco from 'monaco-editor/esm/vs/editor/editor.api';
+import * as monacoEditor from 'monaco-editor/esm/vs/editor/editor.api';
 
 window.MonacoEnvironment = {
     globalAPI: true,
@@ -31,8 +31,8 @@ export default function filamentMonacoEditor({ state, theme, language }) {
         state,
         monaco: null,
         init: function () {
-            this.monaco = monaco.editor.create(this.$refs.element, {
-                value: state,
+            this.monaco = monacoEditor.editor.create(this.$refs.element, {
+                value: state.initialValue,
                 theme: theme,
                 automaticLayout: true,
                 language: language

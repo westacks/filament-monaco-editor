@@ -14,6 +14,6 @@
         })"
     >
 
-        <div x-ref="element"></div>
+        <div x-ref="element" style="height: {{ $getHeight() }};"></div>
     </div>
 </x-dynamic-component>
