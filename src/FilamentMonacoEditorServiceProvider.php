@@ -2,14 +2,14 @@
 
 namespace ConnorHowell\FilamentMonacoEditor;
 
-use Filament\Support\Assets\Js;
+use ConnorHowell\FilamentMonacoEditor\Testing\TestsFilamentMonacoEditor;
+use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Asset;
+use Filament\Support\Assets\Js;
+use Filament\Support\Facades\FilamentAsset;
 use Livewire\Testing\TestableLivewire;
 use Spatie\LaravelPackageTools\Package;
-use Filament\Support\Facades\FilamentAsset;
-use Filament\Support\Assets\AlpineComponent;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use ConnorHowell\FilamentMonacoEditor\Testing\TestsFilamentMonacoEditor;
 
 class FilamentMonacoEditorServiceProvider extends PackageServiceProvider
 {
