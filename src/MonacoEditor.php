@@ -1,6 +1,7 @@
 <?php
 
 namespace ConnorHowell\FilamentMonacoEditor;
+
 use Filament\Forms\Components\Field;
 
 class MonacoEditor extends Field
