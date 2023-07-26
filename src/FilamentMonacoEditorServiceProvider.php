@@ -2,12 +2,10 @@
 
 namespace ConnorHowell\FilamentMonacoEditor;
 
-use ConnorHowell\FilamentMonacoEditor\Testing\TestsFilamentMonacoEditor;
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Asset;
 use Filament\Support\Assets\Js;
 use Filament\Support\Facades\FilamentAsset;
-use Livewire\Testing\TestableLivewire;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
