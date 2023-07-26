@@ -44,17 +44,37 @@ const defaultOptions = {
 }
 
 compile({
-    ...defaultOptions,
+    define: {
+        'process.env.NODE_ENV': isDev ? `'development'` : `'production'`,
+    },
+    bundle: true,
+    mainFields: ['module', 'main'],
+    platform: 'neutral',
+    sourcemap: isDev ? 'inline' : false,
+    sourcesContent: isDev,
+    treeShaking: true,
+    target: ['es2020'],
+    minify: !isDev,
+    format: 'iife',
     entryPoints: {
-        "components/filament-monaco-editor": "./resources/js/index.js",
         "editor.worker": "./node_modules/monaco-editor/esm/vs/editor/editor.worker.js",
         "html.worker": "./node_modules/monaco-editor/esm/vs/language/html/html.worker.js",
         "ts.worker": "./node_modules/monaco-editor/esm/vs/language/typescript/ts.worker.js",
         "css.worker": "./node_modules/monaco-editor/esm/vs/language/css/css.worker.js",
         "json.worker": "./node_modules/monaco-editor/esm/vs/language/json/json.worker.js",
     },
+    outdir: "./resources/dist",
+    loader: {
+        ".ttf": "file",
+    },
+})
+
+compile({
+    ...defaultOptions,
+    entryPoints: {
+        "components/filament-monaco-editor": "./resources/js/index.js"
+    },
     bundle: true,
-    format: 'iife',
     outdir: "./resources/dist",
     loader: {
         ".ttf": "file",
