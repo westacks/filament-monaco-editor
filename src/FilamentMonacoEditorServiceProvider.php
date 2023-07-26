@@ -2,11 +2,12 @@
 
 namespace ConnorHowell\FilamentMonacoEditor;
 
-use Filament\Support\Assets\AlpineComponent;
-use Filament\Support\Assets\Asset;
 use Filament\Support\Assets\Js;
-use Filament\Support\Facades\FilamentAsset;
+use Filament\Support\Assets\Css;
+use Filament\Support\Assets\Asset;
 use Spatie\LaravelPackageTools\Package;
+use Filament\Support\Facades\FilamentAsset;
+use Filament\Support\Assets\AlpineComponent;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class FilamentMonacoEditorServiceProvider extends PackageServiceProvider
@@ -47,6 +48,7 @@ class FilamentMonacoEditorServiceProvider extends PackageServiceProvider
     {
         return [
             AlpineComponent::make('filament-monaco-editor', __DIR__ . '/../resources/dist/components/filament-monaco-editor.js'),
+            Css::make('filament-monaco-editor-css', __DIR__ . '/../resources/dist/components/filament-monaco-editor.css'),
             Js::make('editor-worker', __DIR__ . '/../resources/dist/editor.worker.js'),
             Js::make('html-worker', __DIR__ . '/../resources/dist/html.worker.js'),
             Js::make('ts-worker', __DIR__ . '/../resources/dist/ts.worker.js'),

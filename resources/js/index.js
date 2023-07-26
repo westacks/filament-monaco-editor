@@ -37,6 +37,8 @@ export default function filamentMonacoEditor({ state, theme, language }) {
                 automaticLayout: true,
                 language: language
             });
+
+            this.monaco.getModel().onDidChangeContent(() => state = editor.getValue());
         }
     }
 }
