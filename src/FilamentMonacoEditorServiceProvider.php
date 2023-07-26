@@ -33,9 +33,6 @@ class FilamentMonacoEditorServiceProvider extends PackageServiceProvider
             $this->getAssets(),
             $this->getAssetPackageName()
         );
-
-        // Testing
-        TestableLivewire::mixin(new TestsFilamentMonacoEditor());
     }
 
     protected function getAssetPackageName(): ?string
