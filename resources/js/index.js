@@ -38,7 +38,7 @@ export default function filamentMonacoEditor({ state, theme, language }) {
                 language: language
             });
 
-            this.monaco.getModel().onDidChangeContent(() => state = editor.getValue());
+            this.monaco.getModel().onDidChangeContent(() => state = this.monaco.getValue());
         }
     }
 }
