@@ -2,12 +2,12 @@
 
 namespace ConnorHowell\FilamentMonacoEditor;
 
-use Filament\Support\Assets\Js;
-use Filament\Support\Assets\Css;
-use Filament\Support\Assets\Asset;
-use Spatie\LaravelPackageTools\Package;
-use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Assets\AlpineComponent;
+use Filament\Support\Assets\Asset;
+use Filament\Support\Assets\Css;
+use Filament\Support\Assets\Js;
+use Filament\Support\Facades\FilamentAsset;
+use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class FilamentMonacoEditorServiceProvider extends PackageServiceProvider
