@@ -47,7 +47,7 @@ class FilamentMonacoEditorServiceProvider extends PackageServiceProvider
     protected function getAssets(): array
     {
         return [
-            Css::make('filament-monaco-fonts', __DIR__ . '/../resources/dist/codicon-LCPAQIGT.ttf')->loadedOnRequest(),
+            Css::make('filament-monaco-fonts', __DIR__ . '/../resources/dist/codicon-TEAEXHHG.ttf')->loadedOnRequest(),
             AlpineComponent::make('filament-monaco-editor', __DIR__ . '/../resources/dist/components/filament-monaco-editor.js')->loadedOnRequest(),
             Css::make('filament-monaco-editor', __DIR__ . '/../resources/dist/components/filament-monaco-editor.css'),
             Js::make('editor-worker', __DIR__ . '/../resources/dist/editor.worker.js')->loadedOnRequest(),
