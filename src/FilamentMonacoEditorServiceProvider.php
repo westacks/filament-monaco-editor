@@ -1,6 +1,6 @@
 <?php
 
-namespace ConnorHowell\FilamentMonacoEditor;
+namespace WeStacks\FilamentMonacoEditor;
 
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Asset;
@@ -38,7 +38,7 @@ class FilamentMonacoEditorServiceProvider extends PackageServiceProvider
 
     protected function getAssetPackageName(): ?string
     {
-        return 'connorhowell/filament-monaco-editor';
+        return 'westacks/filament-monaco-editor';
     }
 
     /**
@@ -49,7 +49,7 @@ class FilamentMonacoEditorServiceProvider extends PackageServiceProvider
         return [
             Css::make('filament-monaco-fonts', __DIR__ . '/../resources/dist/codicon-LCPAQIGT.ttf')->loadedOnRequest(),
             AlpineComponent::make('filament-monaco-editor', __DIR__ . '/../resources/dist/components/filament-monaco-editor.js')->loadedOnRequest(),
-            Css::make('filament-monaco-editor', __DIR__ . '/../resources/dist/components/filament-monaco-editor.css')->loadedOnRequest(),
+            Css::make('filament-monaco-editor', __DIR__ . '/../resources/dist/components/filament-monaco-editor.css'),
             Js::make('editor-worker', __DIR__ . '/../resources/dist/editor.worker.js')->loadedOnRequest(),
             Js::make('html-worker', __DIR__ . '/../resources/dist/html.worker.js')->loadedOnRequest(),
             Js::make('ts-worker', __DIR__ . '/../resources/dist/ts.worker.js')->loadedOnRequest(),

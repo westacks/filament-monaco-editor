@@ -1,6 +1,6 @@
 <?php
 
-namespace ConnorHowell\FilamentMonacoEditor\Testing;
+namespace WeStacks\FilamentMonacoEditor\Testing;
 
 use Livewire\Testing\TestableLivewire;
 

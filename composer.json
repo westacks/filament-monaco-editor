@@ -1,15 +1,14 @@
 {
-    "name": "connorhowell/filament-monaco-editor",
+    "name": "westacks/filament-monaco-editor",
     "description": "Monaco Editor integration for Filament Panels & Forms",
     "keywords": [
-        "ConnorHowell",
         "laravel",
         "filament-monaco-editor"
     ],
-    "homepage": "https://github.com/connorhowell/filament-monaco-editor",
+    "homepage": "https://github.com/westacks/filament-monaco-editor",
     "support": {
-        "issues": "https://github.com/connorhowell/filament-monaco-editor/issues",
-        "source": "https://github.com/connorhowell/filament-monaco-editor"
+        "issues": "https://github.com/westacks/filament-monaco-editor/issues",
+        "source": "https://github.com/westacks/filament-monaco-editor"
     },
     "license": "MIT",
     "authors": [
@@ -20,16 +19,16 @@
         }
     ],
     "require": {
-        "php": "^8.1",
-        "filament/forms": "^3.0@beta",
+        "php": "^8.2",
+        "filament/forms": "^3.2",
         "spatie/laravel-package-tools": "^1.15.0",
-        "illuminate/contracts": "^10.0"
+        "illuminate/contracts": "^11.0"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
-        "nunomaduro/collision": "^7.9",
-        "nunomaduro/larastan": "^2.0.1",
-        "orchestra/testbench": "^8.0",
+        "nunomaduro/collision": "^8.1",
+        "larastan/larastan": "^2.0",
+        "orchestra/testbench": "^9.0",
         "pestphp/pest": "^2.0",
         "pestphp/pest-plugin-arch": "^2.0",
         "pestphp/pest-plugin-laravel": "^2.0",
@@ -40,12 +39,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ConnorHowell\\FilamentMonacoEditor\\": "src/"
+            "WeStacks\\FilamentMonacoEditor\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ConnorHowell\\FilamentMonacoEditor\\Tests\\": "tests/"
+            "WeStacks\\FilamentMonacoEditor\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -65,7 +64,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ConnorHowell\\FilamentMonacoEditor\\FilamentMonacoEditorServiceProvider"
+                "WeStacks\\FilamentMonacoEditor\\FilamentMonacoEditorServiceProvider"
             ]
         }
     },

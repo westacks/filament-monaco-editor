@@ -1,6 +1,6 @@
 <?php
 
-// translations for ConnorHowell/FilamentMonacoEditor
+// translations for WeStacks/FilamentMonacoEditor
 return [
     //
 ];

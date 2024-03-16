@@ -1,5 +1,5 @@
 <?php
 
-use ConnorHowell\FilamentMonacoEditor\Tests\TestCase;
+use WeStacks\FilamentMonacoEditor\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

@@ -6,8 +6,8 @@
         wire:ignore
         x-ignore
         ax-load
-        ax-load-src="{{ \Filament\Support\Facades\FilamentAsset::getAlpineComponentSrc('filament-monaco-editor', 'connorhowell/filament-monaco-editor') }}"
-        x-load-css="[@js(\Filament\Support\Facades\FilamentAsset::getStyleHref('filament-monaco-editor', 'connorhowell/filament-monaco-editor'))]"
+        ax-load-src="{{ \Filament\Support\Facades\FilamentAsset::getAlpineComponentSrc('filament-monaco-editor', 'westacks/filament-monaco-editor') }}"
+        x-load-css="[@js(\Filament\Support\Facades\FilamentAsset::getStyleHref('filament-monaco-editor', 'westacks/filament-monaco-editor'))]"
         x-data="filamentMonacoEditor({
             state: $wire.entangle('{{ $getStatePath() }}'),
             theme: '{{ $getTheme() }}',

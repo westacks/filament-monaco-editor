@@ -3,18 +3,18 @@ import * as monaco from 'monaco-editor/esm/vs/editor/editor.main.js';
 self.MonacoEnvironment = {
     getWorkerUrl: function (moduleId, label) {
         if (label === 'json') {
-            return '/js/connorhowell/filament-monaco-editor/json-worker.js';
+            return '/js/westacks/filament-monaco-editor/json-worker.js';
         }
         if (label === 'css' || label === 'scss' || label === 'less') {
-            return '/js/connorhowell/filament-monaco-editor/css-worker.js';
+            return '/js/westacks/filament-monaco-editor/css-worker.js';
         }
         if (label === 'html' || label === 'handlebars' || label === 'razor') {
-            return '/js/connorhowell/filament-monaco-editor/html-worker.js';
+            return '/js/westacks/filament-monaco-editor/html-worker.js';
         }
         if (label === 'typescript' || label === 'javascript') {
-            return '/js/connorhowell/filament-monaco-editor/ts-worker.js';
+            return '/js/westacks/filament-monaco-editor/ts-worker.js';
         }
-        return '/js/connorhowell/filament-monaco-editor/editor-worker.js';
+        return '/js/westacks/filament-monaco-editor/editor-worker.js';
     }
 };
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace ConnorHowell\FilamentMonacoEditor\Tests;
+namespace WeStacks\FilamentMonacoEditor\Tests;
 
 use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
-use ConnorHowell\FilamentMonacoEditor\FilamentMonacoEditorServiceProvider;
+use WeStacks\FilamentMonacoEditor\FilamentMonacoEditorServiceProvider;
 use Filament\Actions\ActionsServiceProvider;
 use Filament\FilamentServiceProvider;
 use Filament\Forms\FormsServiceProvider;
@@ -27,7 +27,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'ConnorHowell\\FilamentMonacoEditor\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+            fn (string $modelName) => 'WeStacks\\FilamentMonacoEditor\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 

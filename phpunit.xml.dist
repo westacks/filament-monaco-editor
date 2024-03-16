@@ -16,7 +16,7 @@
     backupStaticProperties="false"
 >
     <testsuites>
-        <testsuite name="ConnorHowell Test Suite">
+        <testsuite name="WeStacks Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

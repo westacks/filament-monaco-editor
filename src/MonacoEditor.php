@@ -1,6 +1,6 @@
 <?php
 
-namespace ConnorHowell\FilamentMonacoEditor;
+namespace WeStacks\FilamentMonacoEditor;
 
 use Filament\Forms\Components\Field;
 

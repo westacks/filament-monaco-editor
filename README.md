@@ -1,9 +1,9 @@
 # Monaco Editor integration for Filament Panels & Forms
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/connorhowell/filament-monaco-editor.svg?style=flat-square)](https://packagist.org/packages/connorhowell/filament-monaco-editor)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/connorhowell/filament-monaco-editor/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/connorhowell/filament-monaco-editor/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/connorhowell/filament-monaco-editor/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/connorhowell/filament-monaco-editor/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/connorhowell/filament-monaco-editor.svg?style=flat-square)](https://packagist.org/packages/connorhowell/filament-monaco-editor)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/westacks/filament-monaco-editor.svg?style=flat-square)](https://packagist.org/packages/westacks/filament-monaco-editor)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/westacks/filament-monaco-editor/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/westacks/filament-monaco-editor/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/westacks/filament-monaco-editor/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/westacks/filament-monaco-editor/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/westacks/filament-monaco-editor.svg?style=flat-square)](https://packagist.org/packages/westacks/filament-monaco-editor)
 
 
 
@@ -14,13 +14,13 @@ Monaco Editor integration for Filament Panels & Forms.
 You can install the package via composer:
 
 ```bash
-composer require connorhowell/filament-monaco-editor
+composer require westacks/filament-monaco-editor
 ```
 
 ## Usage
 
 ```php
-use ConnorHowell\FilamentMonacoEditor\MonacoEditor;
+use WeStacks\FilamentMonacoEditor\MonacoEditor;
 
 MonacoEditor::make('content')
     ->language('json')
@@ -48,6 +48,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 ## Credits
 
 - [Connor Howell](https://github.com/ConnorHowell)
+- [Dmytro Morozov](https://github.com/punyflash)
 - [All Contributors](../../contributors)
 
 ## License
