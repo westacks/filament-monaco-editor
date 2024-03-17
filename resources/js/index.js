@@ -29,7 +29,7 @@ export default function filamentMonacoEditor({ state, theme, language }) {
                 language: language
             });
 
-            editor.onDidBlurEditorWidget(() => state = editor.getValue());
+            editor.getModel().onDidChangeContent(() => (this.state = editor.getValue()))
         }
     }
 }
